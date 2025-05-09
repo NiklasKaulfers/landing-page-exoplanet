@@ -1,4 +1,7 @@
 # landing-page-exoplanet
+## running the code locally
+requires a run of tsc before working
+**REQUIRES TYPESCRIPT**
 ## how to
 adding and removing groups:  
 - create a folder named "group<n>" where n has to be unique and keeps getting incremented
