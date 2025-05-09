@@ -1,6 +1,5 @@
 import generateChart from "./lib/generate-chart.js";
 
-
 // Nutze das für deinen Chart!
 
 // async function loadCharts(){
