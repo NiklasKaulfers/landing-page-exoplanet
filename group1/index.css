@@ -1,0 +1,31 @@
+#main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#ueberschrift {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#planet-bild-beispiel {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#planet-bild-beispiel img {
+    max-width: 90%;
+    height: auto;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px #00f;
+}
+
+.h1.bold {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#steckbrief {
+    margin: 20px 0;
+}
