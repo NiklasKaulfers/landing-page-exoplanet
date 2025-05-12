@@ -1,6 +1,6 @@
 # landing-page-exoplanet
 ## running the code locally
-requires a run of tsc before working
+requires a run of tsc before working  
 **REQUIRES TYPESCRIPT**
 ## how to
 adding and removing groups:  

@@ -5,7 +5,7 @@
     --miex-color-glow-red: rgb(213, 68, 139);
     --miex-text-color-white: rgb(255,255,255);
     --miex-text-color-gray: rgb(178, 178, 178);
-    --min-prview-content-width: 400px
+    --min-preview-content-width: 400px
 }
 
 #matrix{
@@ -26,14 +26,14 @@
 
 #preview-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--min-prview-content-width),32%));
+    grid-template-columns: repeat(auto-fill, minmax(var(--min-preview-content-width),32%));
     gap: 20px;
 }
 
 body{
     background-image: url("./img/cosmos-1853491_1920.jpg");
     background-color: var(--miex-bg-color-dark-blue);
-
+    padding-top: 20px;
     color: var(--miex-text-color-white);
     font-family: "Space Grotesk", sans-serif;
 }
