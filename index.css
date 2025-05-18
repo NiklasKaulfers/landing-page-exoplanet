@@ -25,15 +25,23 @@
 }
 
 #preview-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--min-preview-content-width),32%));
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 body{
     background-image: url("./img/cosmos-1853491_1920.jpg");
     background-color: var(--miex-bg-color-dark-blue);
-    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior:  smooth;
+    overflow: scroll;
+    overscroll-behavior: none;
+    padding-top: 50px;
+    padding-bottom: 20px;
     color: var(--miex-text-color-white);
     font-family: "Space Grotesk", sans-serif;
 }
@@ -51,20 +59,19 @@ body{
     transition: 0.3s;
     text-align: center;
     border-radius: 5px;
-    max-width: 100%;
+    max-width: 33%;
     min-width: 300px;
+    box-sizing:  border-box;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis:  calc(30% - 10px);
 }
 .preview-content:hover{
     color: var(--miex-text-color-white);
     box-shadow: 0 8px 16px 0 var(--miex-color-light-blue);
 }
-/*.preview-iframe {*/
-/*    width: 100%;*/
-/*    height: 70%;*/
-/*    aspect-ratio: 16/9;*/
-/*    padding: 0;*/
-/*    overflow: hidden;*/
-/*}*/
+
+
 .preview-iframe-content {
     overflow: hidden;
     pointer-events: none;

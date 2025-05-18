@@ -1,5 +1,20 @@
-const GROUP_AMOUNT: number = 4;
-const EMPTY_GROUPS: number[] = [];
+const groupData = {
+    groups: [
+        {
+            name: "group1",
+            text: "A nice group project."
+        },{
+            name: "Planet Discoverers",
+            text: "The discoverers of planets, that are very far away"
+        },{
+            name: "group3",
+            text: "this is very much a test"
+        }, {
+            name: "group4",
+            text: "Group 4 was also pretty good."
+        }
+    ]
+}
 
 generateCards();
 updatedCardContents();
@@ -15,13 +30,16 @@ function generateCards() {
 
     if (!previewGrid) throw new Error("error finding the preview-grid")
 
-    for (let i: number = 1; i <= GROUP_AMOUNT; i++) {
-        if (EMPTY_GROUPS.includes(i)) continue;
+    for (const group of groupData.groups) {
+        const groupName: string = group.name;
+        const groupText: string = group.text;
+
+
         const previewContent = document.createElement("div");
         previewContent.className = "preview-content";
-        previewContent.id = "previewContent" + i;
+        previewContent.id = groupName;
         previewContent.onclick = () => {
-            location.href = "./group" + i + "/index.html";
+            location.href = "./" + groupName + "/index.html";
         }
         previewGrid.appendChild(previewContent);
 
@@ -32,20 +50,20 @@ function generateCards() {
 
         const previewIFrameDisplay = document.createElement("iframe");
         previewIFrameDisplay.className = "preview-iframe-content";
-        previewIFrameDisplay.src = "./group" + i + "/index.html";
+        previewIFrameDisplay.src = "./" + groupName + "/index.html";
         previewIFrameDisplay.scrolling = "no";
 
         previewIFrameDiv.appendChild(previewIFrameDisplay);
 
         const title = document.createElement("h3");
-        title.id = "group" + i + "-name-display";
-        title.innerHTML = "Gruppe " + i;
+        title.id = groupName + "-name-display";
+        title.innerHTML = groupName;
 
         previewContent.appendChild(title);
 
         const textForCard = document.createElement("p");
-        textForCard.id = "group" + i + "-content-display";
-        textForCard.innerHTML = "Text goes here";
+        textForCard.id = groupName + "-content-display";
+        textForCard.innerHTML = groupText;
 
         previewContent.appendChild(textForCard);
     }
