@@ -1,4 +1,4 @@
-import generateChart from "./chart-js-helper/chart-js-helper.js";
+import generateChart from "./src/javascript/chart-js-helper/chart-js-helper.js";
 
 
 
@@ -6,7 +6,7 @@ loadCharts();
 
 async function loadCharts() {
     await generateChart({
-        csvFilename: "../../data/calliopemini-data-2025-03-17T12-05-48-003Z.csv",
+        csvFilename: "./data/calliopemini-data-2025-03-17T12-05-48-003Z.csv",
         divElement: document.getElementById("charts"),
         title: "Schockierende Messwerte",
         backgroundColor: "rgba(250,147,147,0.2)",
@@ -14,7 +14,7 @@ async function loadCharts() {
         animationIndex: 1
     })
     await generateChart({
-        csvFilename: "../../data/calliopemini-data-2025-03-17T12-29-16-698Z.csv",
+        csvFilename: "./data/calliopemini-data-2025-03-17T12-29-16-698Z.csv",
         divElement: document.getElementById("more-charts"),
         borderColor: "rgb(0,100,255)",
         backgroundColor: "rgba(0,100,255,0.2)",

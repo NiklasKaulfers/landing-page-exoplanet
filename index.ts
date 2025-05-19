@@ -17,13 +17,6 @@ const groupData = {
 }
 
 generateCards();
-updatedCardContents();
-// use this to change the text in the cards
-function updatedCardContents(){
-    const group1Title = document.getElementById("group1-name-display");
-    if (group1Title) group1Title.innerHTML = "Super Gruppe";
-}
-
 
 function generateCards() {
     const previewGrid: HTMLElement | null = document.getElementById("preview-grid");
