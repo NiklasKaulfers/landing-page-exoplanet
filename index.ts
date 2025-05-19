@@ -1,4 +1,11 @@
-const groupData = {
+interface GroupData{
+    groups: {
+            name: string,
+            text: string
+        }[]
+}
+
+const groupData: GroupData = {
     groups: [
         {
             name: "group1",
