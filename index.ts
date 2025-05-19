@@ -12,7 +12,7 @@ const groupData: GroupData = {
             text: "A nice group project."
         },{
             name: "Planet Discoverers",
-            text: "The discoverers of planets, that are very far away"
+            text: "The discoverers of planets, that are very far away. And for some unknown reason this text is soooooooo lonnnnnnggggggggggggg. Nobody knows why"
         },{
             name: "group3",
             text: "this is very much a test"
