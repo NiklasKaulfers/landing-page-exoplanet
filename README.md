@@ -9,8 +9,9 @@ adding and removing groups:
 ```typescript
 interface GroupData{
     groups: {
-        name: string,
-        text: string
+        folder: string, // Folder location in relation to TS file
+        name: string, // Display name for the Group
+        text: string // little fun fact or any text below the name
     }[]
 }
 ```
