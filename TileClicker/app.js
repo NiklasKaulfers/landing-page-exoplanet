@@ -1,15 +1,16 @@
+// TODO: needs improvements
 document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById('start-button');
     const playground = document.getElementById('playground');
     const menuModal = document.getElementById('menu-modal');
-
+    startGame(4, 4);
     startButton.addEventListener('click', () => {
-        startGame(4, 4);
+
     });
 
     function startGame(width, height) {
-        playground.innerHTML = '';
-        menuModal.style.display = 'none';
+        // playground.innerHTML = '';
+        // menuModal.style.display = 'none';
         const tiles = createTiles(width, height);
         renderTiles(tiles);
     }
@@ -37,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             playground.appendChild(rowElement);
         });
+        if (completionCheck(tiles) === true){
+            victoryBehavior();
+        }
     }
 
     function onTileClick(x, y, tiles) {
@@ -50,5 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function toggleTile(x, y, tiles) {
         tiles[x][y].active = !tiles[x][y].active;
+    }
+
+    function completionCheck(tiles){
+        for(const row of tiles){
+            for (const tile of row){
+                if (tile.active === false) return false;
+            }
+        }
+        return true;
+    }
+
+    function victoryBehavior(tiles){
+        for(const rows of tiles){
+            for (const tile of rows){
+
+            }
+        }
     }
 });

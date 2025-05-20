@@ -1,10 +1,18 @@
+body{
+    background-image: url("../img/cosmos-1853491_1920.jpg");
+    justify-content: center;
+}
+
 .container {
+    background-image: url("./images/Planet_mit_Sonne_in_Paint.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
     margin: 4px;
     padding: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: beige;
 }
 
 .modal {
@@ -53,7 +61,7 @@ button {
 }
 
 .tileActive {
-    background-color: orange;
+    background-color: rgba(120, 119, 119, 0.39);
 }
 
 .tileInactive {
