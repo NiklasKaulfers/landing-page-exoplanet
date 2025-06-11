@@ -59,6 +59,7 @@ function generateCards() {
 
         const previewIFrameDisplay: HTMLIFrameElement = document.createElement("iframe");
         previewIFrameDisplay.className = "preview-iframe-content";
+        previewIFrameDisplay.loading = "lazy";
         previewIFrameDisplay.src = "./" + folder + "/index.html";
         previewIFrameDisplay.scrolling = "no";
 
