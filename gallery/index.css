@@ -1,0 +1,59 @@
+:root{
+    --miex-bg-color-dark-blue: rgb(4, 30, 52);
+    --miex-bg-color-dark-blue-see-through: rgba(4,30,52, 0.5);
+    --miex-color-light-blue: rgb(1, 247, 248);
+    --miex-color-glow-red: rgb(213, 68, 139);
+    --miex-text-color-white: rgb(255,255,255);
+    --miex-text-color-gray: rgb(178, 178, 178);
+    --min-preview-content-width: 400px
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("./img/cosmos-1853491_1920.jpg");
+    background-color: var(--miex-bg-color-dark-blue);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#title-div{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#title-div h1, h2{
+    text-shadow: 10px 10px 10px var(--miex-color-glow-red);
+    color: var(--miex-text-color-white);
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--miex-bg-color-dark-blue-see-through);
+    background-attachment: fixed;
+    background-position: center;
+    scroll-behavior: unset;
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: var(--miex-text-color-white);
+    text-shadow: -1px 2px 8px var(--miex-color-light-blue);
+}
+
+#picture-holder{
+    justify-items: center;
+    text-align: center;
+}
+
+#picture-holder #gallery-image{
+    padding-bottom: 20px;
+}
+
+#picture-holder p{
+    color: var(--miex-text-color-white);
+}

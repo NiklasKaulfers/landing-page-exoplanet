@@ -1,4 +1,4 @@
-# landing-page-exoplanet
+# Landing Page Mission Exoplanet
 ## running the code locally
 requires a run of tsc before working  
 **REQUIRES TYPESCRIPT**
@@ -15,13 +15,17 @@ interface GroupData{
     }[]
 }
 ```
-## own content for the fields
-each field has 2 options u can add content to:
-- group<groupid>-name-display for a **h3**-tag title
-- group<groupid>-content-display which is a **p**-tag intended for short information, like participants, topic, etc.
-those have to be changed within the **TYPESCRIPT** file
-own content can be created in this way:  
-```typescript
-const group1Title: HTMLElement = document.getElementById("group1-name-display");
-if (group1Title) group1Title.innerHTML = "Super Gruppe";
-```
+
+# Gallery
+Gets loaded as an iframe, just as all other subpages  
+Important here: Generation once again within the Code, however this time in JS  
+Whilst being in JS the entry still matches this TS interface
+````typescript
+interface Image{
+    images: {
+        name: string, // Filename with extension
+        text: string // text being displayed below the image
+    }
+}
+````
+
