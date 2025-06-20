@@ -28,6 +28,10 @@ const groupData: GroupData = {
             folder: "TileClicker",
             name: "TileClicker",
             text: "a nice little game to play."
+        }, {
+            folder: "gallery",
+            name: "Bildergalerie",
+            text: "Bilder des Events"
         }
     ]
 }
