@@ -81,3 +81,20 @@ body{
     height: 400px;
     border: none;
 }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--miex-bg-color-dark-blue-see-through);
+    background-attachment: fixed;
+    background-position: center;
+    scroll-behavior: unset;
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: var(--miex-text-color-white);
+    text-shadow: -1px 2px 8px var(--miex-color-light-blue);
+}
