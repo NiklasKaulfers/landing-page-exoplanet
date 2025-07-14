@@ -24,6 +24,18 @@
     text-shadow: 10px 10px 10px var(--miex-color-glow-red);
 }
 
+#main-content h2 {
+    text-shadow: 8px 8px 8px var(--miex-color-glow-red);
+}
+
+.copyright-acknowledgement{
+    font-size: 0.75em;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+
 #preview-grid{
     display: flex;
     justify-content: space-around;
@@ -94,7 +106,7 @@ footer{
     color: white;
     text-align: center;
 }
-footer a {
+a {
     color: var(--miex-text-color-white);
     text-shadow: -1px 2px 8px var(--miex-color-light-blue);
 }

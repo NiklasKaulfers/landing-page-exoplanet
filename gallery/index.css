@@ -57,3 +57,16 @@ footer a {
 #picture-holder p{
     color: var(--miex-text-color-white);
 }
+
+.copyright-acknowledgement{
+    color:  var(--miex-text-color-white);
+    font-size: 0.75em;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+.copyright-acknowledgement a{
+    color: var(--miex-text-color-white);
+    text-shadow:  1px 2px 8px var(--miex-color-light-blue);
+}
