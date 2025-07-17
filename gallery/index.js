@@ -29,7 +29,7 @@ function loadPictures(divName){
         const textBelow = document.createElement("p");
         textBelow.className = "gallery-image-title";
 
-        const contentOfTextBelow = document.createTextNode(pic + "Test");
+        const contentOfTextBelow = document.createTextNode(pic.substring(0, pic.length - 4));
         textBelow.appendChild(contentOfTextBelow);
 
         divElement.appendChild(htmlImageElement);
